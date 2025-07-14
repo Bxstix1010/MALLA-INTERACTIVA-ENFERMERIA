@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 1rem;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.semestre {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.semestre h3 {
+  margin-top: 0;
+  color: #00796b;
+}
+
+.ramo {
+  background-color: #e0f7fa;
+  border: 1px solid #00796b;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: help;
+  transition: background-color 0.3s;
+}
+
+.ramo:hover {
+  background-color: #b2ebf2;
+}
+.semestre {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  background: white;
+  box-shadow: 2px 2px 10px #ddd;
+  min-width: 220px;
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.celda {
+  display: block;
+  background-color: #e0f7fa;
+  border: none;
+  border-radius: 6px;
+  margin: 5px auto;
+  padding: 8px 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.celda:hover {
+  background-color: #b2ebf2;
+}
+
+.celda.aprobado {
+  background-color: #c8e6c9;
+  text-decoration: line-through;
+  color: #555;
+}
+.celda.bloqueado {
+  background-color: #ddd;
+  color: #888;
+  text-decoration: none;
+  cursor: not-allowed;
+}
